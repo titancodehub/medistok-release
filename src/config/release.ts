@@ -64,3 +64,6 @@ export function getWhatsAppLink(message: string = 'Halo, saya tertarik dengan Me
 export function getEmailLink(subject: string = 'Pertanyaan tentang Medistok', body: string = ''): string {
   return `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
+
+// Google Analytics
+export const GA_MEASUREMENT_ID = 'G-BEGPCSKQ1P';
