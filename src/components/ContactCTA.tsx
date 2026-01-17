@@ -105,7 +105,7 @@ export function ContactCTA() {
               <MapPin className="w-5 h-5 mt-1 flex-shrink-0" />
               <div>
                 <div className="font-semibold mb-1">Lokasi</div>
-                <div className="text-sm text-blue-100">Jakarta, Indonesia</div>
+                <div className="text-sm text-blue-100">Banjarnegara, Jawa Tengah</div>
               </div>
             </div>
           </div>

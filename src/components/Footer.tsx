@@ -89,7 +89,7 @@ export function Footer() {
                 <MapPin className="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" />
                 <div>
                   <div className="text-sm text-gray-400">Alamat</div>
-                  <p>Jakarta, Indonesia</p>
+                  <p>Banjarnegara, Jawa Tengah</p>
                 </div>
               </li>
             </ul>

@@ -8,7 +8,8 @@ export function Hero() {
   };
 
   const handleDemo = () => {
-    window.open(DEMO_LINK, '_blank');
+    void 0;
+    // window.open(DEMO_LINK, '_blank');
   };
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-green-50">
