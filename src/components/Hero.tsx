@@ -89,14 +89,14 @@ export function Hero() {
             <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-green-500/20 rounded-3xl blur-3xl"></div>
             <div className="relative bg-white rounded-2xl shadow-2xl p-4 border border-gray-200">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1767449441925-737379bc2c4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwdGVjaG5vbG9neSUyMGRhc2hib2FyZHxlbnwxfHx8fDE3Njg0OTIzMTF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                src="pharmacy.png"
                 alt="Medistok Dashboard"
                 className="w-full h-auto rounded-xl"
               />
               {/* Offline Indicator Overlay */}
               <div className="absolute top-8 left-8 bg-green-500 text-white px-4 py-2 rounded-lg shadow-lg flex items-center gap-2">
                 <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
-                <span className="font-semibold text-sm">Online & Offline Ready</span>
+                <span className="font-semibold text-sm">Offline Ready</span>
               </div>
             </div>
           </div>

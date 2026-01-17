@@ -50,24 +50,12 @@ export function ProductShowcase() {
         <div className="max-w-6xl mx-auto mb-16">
           <div className="relative bg-white rounded-3xl shadow-2xl p-4 md:p-8 border border-gray-200">
             <ImageWithFallback
-              src="https://images.unsplash.com/photo-1708794758104-718d87e2d6f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsYXB0b3AlMjBwaGFybWFjeSUyMHdvcmtzcGFjZXxlbnwxfHx8fDE3Njg1NTcyNzV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+              src="kasir.png"
               alt="Medistok Workspace"
-              className="w-full h-auto rounded-2xl"
+              className="w-full h-auto rounded-3xl"
             />
             {/* Feature Badges */}
             <div className="absolute top-8 right-8 space-y-3">
-              <div className="bg-white/95 backdrop-blur-sm px-4 py-3 rounded-xl shadow-lg border border-gray-200">
-                <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                  <span className="font-semibold text-sm text-gray-900">Sinkronisasi Aktif</span>
-                </div>
-              </div>
-              <div className="bg-white/95 backdrop-blur-sm px-4 py-3 rounded-xl shadow-lg border border-gray-200">
-                <div className="text-sm">
-                  <div className="text-gray-600">Transaksi Hari Ini</div>
-                  <div className="font-bold text-xl text-gray-900">247</div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
