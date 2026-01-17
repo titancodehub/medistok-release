@@ -7,15 +7,15 @@
 Build your 2 Windows installer files. The landing page expects these exact names:
 
 ```
-Medistok-Setup-x64.exe    (64-bit Windows installer)
-Medistok-Setup-x86.exe    (32-bit Windows installer)
+medistok-x64.exe    (64-bit Windows installer)
+medistok-x86.exe    (32-bit Windows installer)
 ```
 
 **OR if you have portable version:**
 
 ```
-Medistok-Setup-x64.exe    (64-bit installer)
-Medistok-Portable.zip     (Portable version)
+medistok-x64.exe       (64-bit installer)
+medistok-portable.zip  (Portable version)
 ```
 
 > **Important:** File names must match exactly! The landing page uses these names to generate download links.
@@ -71,8 +71,8 @@ Medistok-Portable.zip     (Portable version)
 4. **Attach binaries**:
    - Drag and drop your 2 files OR click "Attach binaries by dropping them here or selecting them"
    - Upload:
-     - `Medistok-Setup-x64.exe`
-     - `Medistok-Setup-x86.exe` (or `Medistok-Portable.zip`)
+     - `medistok-x64.exe`
+     - `medistok-x86.exe` (or `medistok-portable.zip`)
 
 5. **✅ Check "Set as the latest release"** (very important!)
 
@@ -93,8 +93,8 @@ After publishing, test your download links:
    - Should automatically download the correct installer based on your system
 
 3. **Verify download links directly:**
-   - 64-bit: https://github.com/titancodehub/medistok-release/releases/latest/download/Medistok-Setup-x64.exe
-   - 32-bit: https://github.com/titancodehub/medistok-release/releases/latest/download/Medistok-Setup-x86.exe
+   - 64-bit: https://github.com/titancodehub/medistok-release/releases/latest/download/medistok-x64.exe
+   - 32-bit: https://github.com/titancodehub/medistok-release/releases/latest/download/medistok-x86.exe
 
 ✅ **Done!** Your landing page now distributes your binary files.
 
@@ -104,7 +104,7 @@ After publishing, test your download links:
 
 ### Quick Update Process:
 
-1. Build your new version files (same names)
+1. Build your new version files (same names: `medistok-x64.exe` and `medistok-x86.exe`)
 2. Go to: https://github.com/titancodehub/medistok-release/releases
 3. Click **"Draft a new release"**
 4. Tag: `v1.0.1` (increment version)
@@ -161,9 +161,9 @@ https://github.com/titancodehub/medistok-release/releases/latest/download/[FILEN
 ```
 
 Where `[FILENAME]` is:
-- `Medistok-Setup-x64.exe`
-- `Medistok-Setup-x86.exe`
-- `Medistok-Portable.zip` (if you have it)
+- `medistok-x64.exe`
+- `medistok-x86.exe`
+- `medistok-portable.zip` (if you have it)
 
 The `/latest/` part **automatically redirects to the newest release** - that's why you don't need to update the landing page!
 
@@ -178,8 +178,8 @@ The `/latest/` part **automatically redirects to the newest release** - that's w
 **Fix:**
 1. Check you published a release (not draft)
 2. Verify file names are exactly:
-   - `Medistok-Setup-x64.exe`
-   - `Medistok-Setup-x86.exe`
+   - `medistok-x64.exe`
+   - `medistok-x86.exe`
 
 ### ❌ Wrong installer downloads (32-bit on 64-bit system)
 
@@ -203,7 +203,7 @@ The `/latest/` part **automatically redirects to the newest release** - that's w
 ## Checklist for First Release
 
 - [ ] Build your 2 Windows installers
-- [ ] Name them exactly: `Medistok-Setup-x64.exe` and `Medistok-Setup-x86.exe`
+- [ ] Name them exactly: `medistok-x64.exe` and `medistok-x86.exe`
 - [ ] Go to GitHub Releases
 - [ ] Create tag `v1.0.0`
 - [ ] Upload both files

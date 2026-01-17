@@ -18,9 +18,9 @@ export const LATEST_RELEASE = `${GITHUB_BASE}/releases/latest`;
 
 // Direct download links (auto-redirect to latest version)
 export const DOWNLOAD_LINKS = {
-  windows64: `${GITHUB_BASE}/releases/latest/download/Medistok-Setup-x64.exe`,
-  windows32: `${GITHUB_BASE}/releases/latest/download/Medistok-Setup-x86.exe`,
-  windowsPortable: `${GITHUB_BASE}/releases/latest/download/Medistok-Portable.zip`,
+  windows64: `${GITHUB_BASE}/releases/latest/download/medistok-x64.exe`,
+  windows32: `${GITHUB_BASE}/releases/latest/download/medistok-x86.exe`,
+  windowsPortable: `${GITHUB_BASE}/releases/latest/download/medistok-portable.zip`,
 };
 
 // Demo/Trial links
