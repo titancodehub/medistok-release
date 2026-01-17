@@ -1,0 +1,87 @@
+name: Create Release
+
+on:
+  push:
+    tags:
+      - 'v*'  # Triggers on tags like v1.0.0, v1.0.1, etc.
+  workflow_dispatch:  # Allow manual trigger
+    inputs:
+      version:
+        description: 'Release version (e.g., v1.0.0)'
+        required: true
+        type: string
+
+permissions:
+  contents: write  # Required to create releases
+
+jobs:
+  create-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Get version from tag or input
+        id: get_version
+        run: |
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            echo "version=${{ github.event.inputs.version }}" >> $GITHUB_OUTPUT
+          else
+            echo "version=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ steps.get_version.outputs.version }}
+          name: Medistok ${{ steps.get_version.outputs.version }}
+          body: |
+            ## Medistok ${{ steps.get_version.outputs.version }}
+
+            ### Download
+
+            - **Windows:** [Medistok-Setup-Windows.exe](https://github.com/${{ github.repository }}/releases/download/${{ steps.get_version.outputs.version }}/Medistok-Setup-Windows.exe)
+            - **macOS:** [Medistok-Setup-macOS.dmg](https://github.com/${{ github.repository }}/releases/download/${{ steps.get_version.outputs.version }}/Medistok-Setup-macOS.dmg)
+            - **Linux:** [Medistok-Setup-Linux.AppImage](https://github.com/${{ github.repository }}/releases/download/${{ steps.get_version.outputs.version }}/Medistok-Setup-Linux.AppImage)
+
+            ### Release Notes
+
+            <!-- Add your release notes here -->
+            - Initial release
+            - Offline-first POS system
+            - Inventory management
+            - Analytics dashboard
+
+            ### Installation
+
+            1. Download the installer for your platform
+            2. Run the installer
+            3. Follow the setup wizard
+            4. Start using Medistok!
+
+            ---
+
+            **Full Changelog:** https://github.com/${{ github.repository }}/compare/...HEAD
+          draft: false
+          prerelease: false
+          # files: |
+          #   ./dist/Medistok-Setup-Windows.exe
+          #   ./dist/Medistok-Setup-macOS.dmg
+          #   ./dist/Medistok-Setup-Linux.AppImage
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+# Note: Uncomment the 'files' section above and add your binary paths
+# when you have the actual binaries to upload automatically.
+#
+# This workflow will:
+# 1. Trigger when you push a tag (git push origin v1.0.0)
+# 2. Or when manually triggered from GitHub Actions tab
+# 3. Create a draft release
+# 4. Upload binaries if specified
+#
+# To use:
+# 1. Build your binaries locally
+# 2. Create and push a tag: git tag v1.0.0 && git push origin v1.0.0
+# 3. Go to GitHub Releases and upload the binaries manually
+# 4. Publish the release

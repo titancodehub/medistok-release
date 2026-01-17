@@ -1,2 +1,10 @@
 node_modules
 build
+dist
+
+# Binaries (use GitHub Releases instead)
+*.exe
+*.dmg
+*.AppImage
+*.zip
+*.tar.gz
