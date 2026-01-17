@@ -34,7 +34,7 @@ export function Hero() {
 
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
               Solusi manajemen apotek modern untuk apotek kecil hingga menengah.
-              Tetap produktif meski internet mati, tanpa biaya langganan bulanan.
+              Tetap produktif meski internet mati. Model lisensi sekali bayar, tanpa biaya bulanan.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -54,8 +54,8 @@ export function Hero() {
                   <span className="text-xl">✓</span>
                 </div>
                 <div>
-                  <div className="font-semibold text-gray-900">Apotek</div>
-                  <div className="text-sm text-gray-600">Telah Percaya</div>
+                  <div className="font-semibold text-gray-900">Digunakan</div>
+                  <div className="text-sm text-gray-600">Apotek Indonesia</div>
                 </div>
               </div>
               <div className="flex items-center gap-2">

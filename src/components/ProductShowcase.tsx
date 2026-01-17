@@ -107,10 +107,10 @@ export function ProductShowcase() {
             </div>
             <div className="space-y-6">
               <h3 className="text-3xl font-bold text-gray-900">
-                Dipercaya oleh Apotek Se-Indonesia
+                Digunakan oleh Apotek di Indonesia
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Dari apotek tradisional hingga modern, Medistok apotek
+                Dari apotek tradisional hingga modern, Medistok membantu
                 meningkatkan efisiensi operasional dan memberikan pelayanan terbaik kepada pelanggan.
               </p>
               <div className="space-y-4">
@@ -137,8 +137,8 @@ export function ProductShowcase() {
                     <span className="text-white text-sm">✓</span>
                   </div>
                   <div>
-                    <div className="font-semibold text-gray-900">Update Gratis</div>
-                    <div className="text-gray-600 text-sm">Fitur offline dan inti dapat digunakan tanpa biaya</div>
+                    <div className="font-semibold text-gray-900">Pembaruan Tersedia</div>
+                    <div className="text-gray-600 text-sm">Pembaruan fitur inti sesuai kebijakan saat ini</div>
                   </div>
                 </div>
               </div>

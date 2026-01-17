@@ -96,11 +96,12 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-400 text-sm">
-            © 2026 Medistok. All rights reserved.
-          </p>
-          <div className="flex gap-6 text-sm">
+        <div className="border-t border-gray-800 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 mb-4">
+            <p className="text-gray-400 text-sm">
+              © 2026 Medistok. All rights reserved.
+            </p>
+            <div className="flex gap-6 text-sm">
             <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
               Kebijakan Privasi
             </a>
@@ -110,6 +111,16 @@ export function Footer() {
             <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
               Bantuan
             </a>
+            </div>
+          </div>
+
+          {/* Legal Disclaimer */}
+          <div className="text-center mt-6 pt-6 border-t border-gray-800">
+            <p className="text-xs text-gray-500 max-w-4xl mx-auto">
+              Model lisensi, fitur, dan kebijakan pembaruan dapat berubah pada versi mendatang
+              tanpa memengaruhi lisensi yang telah aktif. Informasi lebih lanjut tersedia dalam
+              Syarat & Ketentuan.
+            </p>
           </div>
         </div>
       </div>

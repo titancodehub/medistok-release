@@ -10,7 +10,7 @@ const features = [
   {
     icon: Wallet,
     title: 'Sekali Bayar, Tanpa Langganan',
-    description: 'Bayar sekali untuk selamanya. Tidak ada biaya bulanan atau tahunan yang membebani operasional apotek Anda.',
+    description: 'Model lisensi sekali bayar untuk penggunaan jangka panjang. Tidak ada biaya bulanan atau tahunan yang membebani operasional apotek Anda.',
     color: 'from-green-500 to-green-600'
   },
   {
@@ -21,8 +21,8 @@ const features = [
   },
   {
     icon: Shield,
-    title: 'Keamanan Data Terjamin',
-    description: 'Data apotek Anda disimpan secara lokal di perangkat, sehingga tetap aman dan dapat diakses tanpa koneksi internet.',
+    title: 'Data Tersimpan Lokal',
+    description: 'Data apotek Anda disimpan di perangkat lokal, tidak di cloud. Dapat diakses kapan saja tanpa koneksi internet.',
     color: 'from-orange-500 to-orange-600'
   },
   {

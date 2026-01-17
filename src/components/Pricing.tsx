@@ -4,7 +4,7 @@ const plans = [
   {
     name: 'Basic',
     price: '399.999',
-    description: 'Untuk apotek menengah dengan multiple kasir',
+    description: 'Untuk apotek kecil-menengah yang butuh fitur lengkap.',
     features: [
       '1 Lisensi Komputer',
       'POS & Kasir Lengkap',
@@ -13,7 +13,7 @@ const plans = [
       'Laporan Lengkap (Excel/PDF)',
       'Mode Offline',
       'Multi-user Management',
-      'Update Gratis Selamanya',
+      'Pembaruan Fitur Inti*',
     ],
     popular: true
   },
@@ -29,11 +29,11 @@ export function Pricing() {
             Harga Transparan
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Investasi Sekali, Manfaat Selamanya
+            Lisensi Sekali Bayar, Biaya Terkendali
           </h2>
           <p className="text-lg text-gray-600">
             Tidak ada biaya tersembunyi, tidak ada langganan bulanan.
-            Bayar sekali dan gunakan selamanya.
+            Lisensi perpetual untuk penggunaan jangka panjang.
           </p>
         </div>
 
@@ -76,7 +76,7 @@ export function Pricing() {
                       </span>
                     </div>
                     <div className="text-sm text-gray-600 mt-1">
-                      Sekali bayar, tanpa biaya bulanan
+                      Lisensi perpetual, tanpa biaya bulanan
                     </div>
                   </>
                 )}
@@ -119,7 +119,7 @@ export function Pricing() {
                 Masih ragu? Coba dulu, baru putuskan!
               </h3>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Dapatkan akses trial 14 hari dengan semua fitur Professional.
+                Dapatkan akses trial 14 hari dengan fitur yang tersedia.
                 Tidak perlu kartu kredit, tidak ada komitmen.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -146,6 +146,14 @@ export function Pricing() {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Disclaimer */}
+        <div className="mt-8 max-w-4xl mx-auto text-center">
+          <p className="text-sm text-gray-500">
+            *Pembaruan untuk fitur inti dan perbaikan bug selama kebijakan pembaruan berlaku.
+            Cakupan dan kebijakan pembaruan dapat berkembang seiring waktu.
+          </p>
         </div>
       </div>
     </section>
