@@ -3,7 +3,7 @@ import { Check, ChevronRight } from 'lucide-react';
 const plans = [
   {
     name: 'Basic',
-    price: '399.999',
+    price: 'XXX.999',
     description: 'Untuk apotek kecil-menengah yang butuh fitur lengkap.',
     features: [
       '1 Lisensi Komputer',
