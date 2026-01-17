@@ -8,7 +8,7 @@ export function Hero() {
       <nav className="container mx-auto px-4 py-6 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <div className="w-12 h-12 flex items-center justify-center overflow-hidden">
-           <img src="/logo.png" alt="Medistok Logo" className="w-40 h-40" />
+           <img src="logo.png" alt="Medistok Logo" className="w-40 h-40" />
           </div>
           <span className="text-2xl font-bold text-gray-900">Medistok</span>
         </div>
