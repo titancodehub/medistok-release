@@ -1,4 +1,5 @@
 import { Check, ChevronRight } from 'lucide-react';
+import { getAutomaticDownloadLink, TRIAL_LINK, DEMO_LINK } from '../config/release';
 
 const plans = [
   {
@@ -20,6 +21,18 @@ const plans = [
 ];
 
 export function Pricing() {
+  const handleDownload = () => {
+    window.open(getAutomaticDownloadLink(), '_blank');
+  };
+
+  const handleTrial = () => {
+    window.open(TRIAL_LINK, '_blank');
+  };
+
+  const handleDemo = () => {
+    window.open(DEMO_LINK, '_blank');
+  };
+
   return (
     <section className="py-20 md:py-32 bg-white">
       <div className="container mx-auto px-4">
@@ -83,6 +96,7 @@ export function Pricing() {
               </div>
 
               <button
+                onClick={handleDownload}
                 className={`w-full py-4 rounded-xl font-semibold transition-all flex items-center justify-center gap-2 group mb-8 ${
                   plan.popular
                     ? 'bg-blue-600 text-white hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-600/30'
@@ -123,10 +137,16 @@ export function Pricing() {
                 Tidak perlu kartu kredit, tidak ada komitmen.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="px-8 py-4 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-all hover:shadow-lg hover:shadow-blue-600/30 font-semibold">
+                <button
+                  onClick={handleTrial}
+                  className="px-8 py-4 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-all hover:shadow-lg hover:shadow-blue-600/30 font-semibold"
+                >
                   Mulai Trial Gratis
                 </button>
-                <button className="px-8 py-4 bg-white text-gray-700 rounded-xl hover:bg-gray-50 transition-colors font-semibold border-2 border-gray-200">
+                <button
+                  onClick={handleDemo}
+                  className="px-8 py-4 bg-white text-gray-700 rounded-xl hover:bg-gray-50 transition-colors font-semibold border-2 border-gray-200"
+                >
                   Jadwalkan Demo
                 </button>
               </div>

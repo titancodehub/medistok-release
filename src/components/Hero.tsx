@@ -1,7 +1,15 @@
 import { WifiOff, ChevronRight } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
+import { getAutomaticDownloadLink, DEMO_LINK } from '../config/release';
 
 export function Hero() {
+  const handleDownload = () => {
+    window.open(getAutomaticDownloadLink(), '_blank');
+  };
+
+  const handleDemo = () => {
+    window.open(DEMO_LINK, '_blank');
+  };
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-green-50">
       {/* Navigation */}
@@ -38,11 +46,17 @@ export function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="px-8 py-4 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-all hover:shadow-lg hover:shadow-blue-600/30 font-semibold flex items-center justify-center gap-2 group">
+              <button
+                onClick={handleDownload}
+                className="px-8 py-4 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-all hover:shadow-lg hover:shadow-blue-600/30 font-semibold flex items-center justify-center gap-2 group"
+              >
                 Coba Medistok Sekarang
                 <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
-              <button className="px-8 py-4 bg-white text-gray-700 rounded-xl hover:bg-gray-50 transition-colors font-semibold border-2 border-gray-200">
+              <button
+                onClick={handleDemo}
+                className="px-8 py-4 bg-white text-gray-700 rounded-xl hover:bg-gray-50 transition-colors font-semibold border-2 border-gray-200"
+              >
                 Lihat Demo
               </button>
             </div>

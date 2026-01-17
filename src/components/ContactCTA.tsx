@@ -1,18 +1,13 @@
 import { Mail, MessageCircle, Phone, MapPin, Clock } from 'lucide-react';
+import { WHATSAPP_DISPLAY, CONTACT_EMAIL, getWhatsAppLink, getEmailLink } from '../config/release';
 
 export function ContactCTA() {
-  const whatsappNumber = '6281234567890'; // Replace with actual WhatsApp number
-  const email = 'info@medistok.com'; // Replace with actual email
-
   const handleWhatsAppClick = () => {
-    const message = encodeURIComponent('Halo, saya tertarik dengan Medistok dan ingin konsultasi lebih lanjut.');
-    window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+    window.open(getWhatsAppLink('Halo, saya tertarik dengan Medistok dan ingin konsultasi lebih lanjut.'), '_blank');
   };
 
   const handleEmailClick = () => {
-    const subject = encodeURIComponent('Konsultasi Medistok');
-    const body = encodeURIComponent('Halo tim Medistok,\n\nSaya tertarik untuk mengetahui lebih lanjut tentang Medistok.\n\n');
-    window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+    window.location.href = getEmailLink('Konsultasi Medistok', 'Halo tim Medistok,\n\nSaya tertarik untuk mengetahui lebih lanjut tentang Medistok.\n\n');
   };
 
   return (
@@ -95,8 +90,8 @@ export function ContactCTA() {
             <div className="flex items-start gap-3 text-white">
               <Phone className="w-5 h-5 mt-1 flex-shrink-0" />
               <div>
-                <div className="font-semibold mb-1">Telepon</div>
-                <div className="text-sm text-blue-100">+62 812-3456-7890</div>
+                <div className="font-semibold mb-1">WhatsApp</div>
+                <div className="text-sm text-blue-100">{WHATSAPP_DISPLAY}</div>
               </div>
             </div>
             <div className="flex items-start gap-3 text-white">
@@ -119,7 +114,7 @@ export function ContactCTA() {
         {/* Bottom CTA */}
         <div className="text-center mt-12">
           <p className="text-blue-100 text-sm">
-            Lebih dari <span className="font-bold text-white">1000+ apotek</span> telah mempercayai Medistok untuk mengelola bisnis mereka
+            Hubungi kami untuk konsultasi gratis dan demo aplikasi
           </p>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import { WifiOff, Mail, Phone, MapPin } from 'lucide-react';
+import { WHATSAPP_DISPLAY, CONTACT_EMAIL } from '../config/release';
 
 export function Footer() {
   return (
@@ -70,8 +71,8 @@ export function Footer() {
                 <Mail className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
                 <div>
                   <div className="text-sm text-gray-400">Email</div>
-                  <a href="mailto:info@medistok.id" className="hover:text-blue-400 transition-colors">
-                    info@medistok.id
+                  <a href={`mailto:${CONTACT_EMAIL}`} className="hover:text-blue-400 transition-colors">
+                    {CONTACT_EMAIL}
                   </a>
                 </div>
               </li>
@@ -79,8 +80,8 @@ export function Footer() {
                 <Phone className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
                 <div>
                   <div className="text-sm text-gray-400">WhatsApp</div>
-                  <a href="tel:+628123456789" className="hover:text-blue-400 transition-colors">
-                    +62 812-3456-789
+                  <a href={`https://wa.me/${WHATSAPP_DISPLAY.replace(/\D/g, '')}`} className="hover:text-blue-400 transition-colors">
+                    {WHATSAPP_DISPLAY}
                   </a>
                 </div>
               </li>
