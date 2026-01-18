@@ -41,16 +41,6 @@ jobs:
             ### Download
 
             - **Windows:** [Medistok-Setup-Windows.exe](https://github.com/${{ github.repository }}/releases/download/${{ steps.get_version.outputs.version }}/Medistok-Setup-Windows.exe)
-            - **macOS:** [Medistok-Setup-macOS.dmg](https://github.com/${{ github.repository }}/releases/download/${{ steps.get_version.outputs.version }}/Medistok-Setup-macOS.dmg)
-            - **Linux:** [Medistok-Setup-Linux.AppImage](https://github.com/${{ github.repository }}/releases/download/${{ steps.get_version.outputs.version }}/Medistok-Setup-Linux.AppImage)
-
-            ### Release Notes
-
-            <!-- Add your release notes here -->
-            - Initial release
-            - Offline-first POS system
-            - Inventory management
-            - Analytics dashboard
 
             ### Installation
 

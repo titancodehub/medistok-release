@@ -15,7 +15,6 @@ export default function App() {
       <Features />
       <ProductShowcase />
       <Pricing />
-      <CustomPlan />
       <CustomRequirements />
       <FAQ />
       <ContactCTA />

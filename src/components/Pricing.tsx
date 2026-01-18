@@ -4,10 +4,26 @@ import { getAutomaticDownloadLink, TRIAL_LINK, DEMO_LINK } from '../config/relea
 const plans = [
   {
     name: 'Basic',
-    price: 'XXX.999',
+    price: 'Rp. XXX.999',
     description: 'Untuk apotek kecil-menengah yang butuh fitur lengkap.',
     features: [
-      '1 Lisensi Komputer',
+      'Lisensi Perpetual untuk 1 Komputer',
+      'POS & Kasir Lengkap',
+      'Manajemen Inventori',
+      'Dashboard Analitik',
+      'Laporan Lengkap (Excel/PDF)',
+      'Mode Offline',
+      'Multi-user Management',
+      'Pembaruan Fitur Inti*',
+    ],
+    popular: false
+  },
+  {
+    name: 'Bundle',
+    price: 'Rp. XXX.XXX',
+    description: 'Untuk apotek kecil-menengah yang butuh fitur lengkap.',
+    features: [
+      'Lisensi Perpetual untuk 3 Komputer',
       'POS & Kasir Lengkap',
       'Manajemen Inventori',
       'Dashboard Analitik',
@@ -17,6 +33,19 @@ const plans = [
       'Pembaruan Fitur Inti*',
     ],
     popular: true
+  },
+  {
+    name: 'Custom',
+    price: 'Hubungi Kami Untuk Harga Khusus',
+    description: 'Kami menyediakan paket custom yang disesuaikan dengan kebutuhan bisnis apotek Anda. Dari skala kecil hingga jaringan apotek besar. Apakah Anda memiliki jaringan apotek atau butuh fitur khusus? Kami siap membuat solusi yang tepat untuk bisnis Anda.',
+    features: [
+      'Multi-cabang & Sinkronisasi Real-time',
+      'Integrasi dengan sistem existing (ERP, Accounting, dll)',
+      'Custom reporting & analytics sesuai kebutuhan bisnis',
+      'Training & onboarding khusus untuk tim Anda',
+      'Lisensi multi-cabang sesuai kebutuhan',
+    ],
+    popular: false
   },
 ];
 
@@ -85,11 +114,8 @@ export function Pricing() {
                   <>
                     <div className="flex items-baseline gap-2">
                       <span className="text-4xl font-bold text-gray-900">
-                        Rp {plan.price}
+                        {plan.price}
                       </span>
-                    </div>
-                    <div className="text-sm text-gray-600 mt-1">
-                      Lisensi perpetual, tanpa biaya bulanan
                     </div>
                   </>
                 )}
