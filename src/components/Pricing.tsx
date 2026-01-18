@@ -4,7 +4,7 @@ import { getAutomaticDownloadLink, TRIAL_LINK, DEMO_LINK } from '../config/relea
 const plans = [
   {
     name: 'Basic',
-    price: 'Rp. XXX.999',
+    price: 'Rp. 200.000',
     description: 'Untuk apotek kecil-menengah yang butuh fitur lengkap.',
     features: [
       'Lisensi Perpetual untuk 1 Komputer',
@@ -20,7 +20,7 @@ const plans = [
   },
   {
     name: 'Bundle',
-    price: 'Rp. XXX.XXX',
+    price: 'Rp. 500.000',
     description: 'Untuk apotek kecil-menengah yang butuh fitur lengkap.',
     features: [
       'Lisensi Perpetual untuk 3 Komputer',
