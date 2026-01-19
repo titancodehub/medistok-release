@@ -3,8 +3,9 @@ import { ImageWithFallback } from './figma/ImageWithFallback';
 import { getAutomaticDownloadLink, DEMO_LINK } from '../config/release';
 
 export function Hero() {
-  const handleDownload = () => {
-    window.open(getAutomaticDownloadLink(), '_blank');
+  const handleDownload = async () => {
+    const downloadLink = await getAutomaticDownloadLink();
+    window.open(downloadLink, '_blank');
   };
 
   const handleDemo = () => {

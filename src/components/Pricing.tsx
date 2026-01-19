@@ -1,5 +1,5 @@
 import { Check, ChevronRight } from 'lucide-react';
-import { getAutomaticDownloadLink, TRIAL_LINK, DEMO_LINK } from '../config/release';
+import { getAutomaticDownloadLink, getDownloadLink, DEMO_LINK } from '../config/release';
 
 const plans = [
   {
@@ -50,12 +50,14 @@ const plans = [
 ];
 
 export function Pricing() {
-  const handleDownload = () => {
-    window.open(getAutomaticDownloadLink(), '_blank');
+  const handleDownload = async () => {
+    const downloadLink = await getAutomaticDownloadLink();
+    window.open(downloadLink, '_blank');
   };
 
-  const handleTrial = () => {
-    window.open(TRIAL_LINK, '_blank');
+  const handleTrial = async () => {
+    const trialLink = await getDownloadLink('windows64');
+    window.open(trialLink, '_blank');
   };
 
   const handleDemo = () => {
